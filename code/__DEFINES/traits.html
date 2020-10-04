@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;traits.dm - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/traits.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/traits.dm 
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_HANDS_BLOCKED">TRAIT_HANDS_BLOCKED</a></th><td>Prevents usage of manipulation appendages (picking, holding or using items, manipulating storage).</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_UI_BLOCKED">TRAIT_UI_BLOCKED</a></th><td>Inability to access UI hud elements. Turned into a trait from <a href="code/__DEFINES/flags.html#define/MOBILITY_UI" title="MOBILITY_UI">MOBILITY_UI</a> to be able to track sources.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_PULL_BLOCKED">TRAIT_PULL_BLOCKED</a></th><td>Inability to pull things. Turned into a trait from <a href="code/__DEFINES/flags.html#define/MOBILITY_PULL" title="MOBILITY_PULL">MOBILITY_PULL</a> to be able to track sources.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_RESTRAINED">TRAIT_RESTRAINED</a></th><td>Abstract condition that prevents movement if being pulled and might be resisted against. Handcuffs and straight jackets, basically.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_SPECIAL_TRAUMA_BOOST">TRAIT_SPECIAL_TRAUMA_BOOST</a></th><td>Increases chance of getting special traumas, makes them harder to cure</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_PARALYSIS">TRAIT_PARALYSIS</a></th><td>Used for limb-based paralysis, where replacing the limb will fix it.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_DISABLED_BY_WOUND">TRAIT_DISABLED_BY_WOUND</a></th><td>Used for limbs.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/TRAIT_KEEP_TOGETHER">TRAIT_KEEP_TOGETHER</a></th><td>Used for managing KEEP_TOGETHER in [/atom/var/appearance_flags]</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/SUIT_TRAIT">SUIT_TRAIT</a></th><td>Trait associated to wearing a suit</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/LYING_DOWN_TRAIT">LYING_DOWN_TRAIT</a></th><td>Trait associated to lying down (having a [lying_angle] of a different value than zero).</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/POWER_LACK_TRAIT">POWER_LACK_TRAIT</a></th><td>Trait associated to lacking electrical power.</td></tr>
+        <tr><th><a href="code/__DEFINES/traits.html#define/WARPWHISTLE_TRAIT">WARPWHISTLE_TRAIT</a></th><td>Trait granted by <a href="obj/item.html" title="/obj/item">/obj/item/warpwhistle</a></td></tr></table><h2 id="define">Define Details</h2>
+<h3 id="define/LYING_DOWN_TRAIT"><aside class="declaration">#define </aside>LYING_DOWN_TRAIT
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L300">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 300"/></a>
+    </h3>
+    <p>Trait associated to lying down (having a [lying_angle] of a different value than zero).</p><h3 id="define/POWER_LACK_TRAIT"><aside class="declaration">#define </aside>POWER_LACK_TRAIT
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L302">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 302"/></a>
+    </h3>
+    <p>Trait associated to lacking electrical power.</p><h3 id="define/SUIT_TRAIT"><aside class="declaration">#define </aside>SUIT_TRAIT
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L298">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 298"/></a>
+    </h3>
+    <p>Trait associated to wearing a suit</p><h3 id="define/TRAIT_DISABLED_BY_WOUND"><aside class="declaration">#define </aside>TRAIT_DISABLED_BY_WOUND
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L217">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 217"/></a>
+    </h3>
+    <p>Used for limbs.</p><h3 id="define/TRAIT_HANDS_BLOCKED"><aside class="declaration">#define </aside>TRAIT_HANDS_BLOCKED
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L83">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 83"/></a>
+    </h3>
+    <p>Prevents usage of manipulation appendages (picking, holding or using items, manipulating storage).</p><h3 id="define/TRAIT_KEEP_TOGETHER"><aside class="declaration">#define </aside>TRAIT_KEEP_TOGETHER
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L220">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 220"/></a>
+    </h3>
+    <p>Used for managing KEEP_TOGETHER in [/atom/var/appearance_flags]</p><h3 id="define/TRAIT_PARALYSIS"><aside class="declaration">#define </aside>TRAIT_PARALYSIS
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L215">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 215"/></a>
+    </h3>
+    <p>Used for limb-based paralysis, where replacing the limb will fix it.</p><h3 id="define/TRAIT_PULL_BLOCKED"><aside class="declaration">#define </aside>TRAIT_PULL_BLOCKED
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L87">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 87"/></a>
+    </h3>
+    <p>Inability to pull things. Turned into a trait from <a href="code/__DEFINES/flags.html#define/MOBILITY_PULL" title="MOBILITY_PULL">MOBILITY_PULL</a> to be able to track sources.</p><h3 id="define/TRAIT_RESTRAINED"><aside class="declaration">#define </aside>TRAIT_RESTRAINED
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L89">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 89"/></a>
+    </h3>
+    <p>Abstract condition that prevents movement if being pulled and might be resisted against. Handcuffs and straight jackets, basically.</p><h3 id="define/TRAIT_SPECIAL_TRAUMA_BOOST"><aside class="declaration">#define </aside>TRAIT_SPECIAL_TRAUMA_BOOST
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L193">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 193"/></a>
+    </h3>
+    <p>Increases chance of getting special traumas, makes them harder to cure</p><h3 id="define/TRAIT_UI_BLOCKED"><aside class="declaration">#define </aside>TRAIT_UI_BLOCKED
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 85"/></a>
+    </h3>
+    <p>Inability to access UI hud elements. Turned into a trait from <a href="code/__DEFINES/flags.html#define/MOBILITY_UI" title="MOBILITY_UI">MOBILITY_UI</a> to be able to track sources.</p><h3 id="define/WARPWHISTLE_TRAIT"><aside class="declaration">#define </aside>WARPWHISTLE_TRAIT
+            <a href="https://github.com/tgstation/tgstation/blob/fac68576a426e9126ac32a04d3d55a8e71efd9c2/code/__DEFINES/traits.dm#L351">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;traits.dm 351"/></a>
+    </h3>
+    <p>Trait granted by <a href="obj/item.html" title="/obj/item">/obj/item/warpwhistle</a></p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/tgstation/tgstation/tree/fac68576a426e9126ac32a04d3d55a8e71efd9c2">fac6857</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.1</a></footer>
+</body>
+</html>
